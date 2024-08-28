@@ -76,10 +76,11 @@ namespace Demo
 
             app.UseStaticFiles();
 
-            app.MapControllerRoute( 
-                name : "default",
-                pattern: "/{Controller=Home}/{action=Index}",
-                defaults : new {Controller = "Home",Action = "Index"}
+
+            app.MapControllerRoute(
+                name: "default",
+                pattern: "/{Controller=Home}/{Action=Index}",
+                defaults: new { Controller = "Home", Action = "Index" }
                 );
 
             app.Run();
